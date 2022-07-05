@@ -1,7 +1,10 @@
 
 1. login Githu.com
 2. create token
-	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
+	hp laptop : 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
+	
+	toshiba laptop : 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
+	
 3. create git remote repo =>devopsfirst2706
 
    …or create a new repository on the command line
@@ -9,8 +12,8 @@
    git init
    git add README.md
    git commit -m "first commit"
-   git config --global user.name "FIRST_NAME LAST_NAME"
-   git config --global user.email "MY_NAME@example.com"
+   git config --global user.name "Pradeep"
+   git config --global user.email "pradeep.d80@gmail.com"
    git commit -m "first commit"
    git branch -M main
    git remote add origin https://github.com/pradeepd80/devopsfirst2706.git
