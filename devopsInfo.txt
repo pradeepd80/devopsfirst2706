@@ -1,0 +1,609 @@
+
+1. login Githu.com
+2. create token
+	hp laptop : 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
+	
+	toshiba laptop : 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
+	
+3. create git remote repo =>devopsfirst2706
+
+   …or create a new repository on the command line
+   echo "# devopsfirst2706" >> README.md
+   git init
+   git add README.md
+   git commit -m "first commit"
+   git config --global user.name "Pradeep"
+   git config --global user.email "pradeep.d80@gmail.com"
+   git commit -m "first commit"
+   git branch -M main
+   git remote add origin https://github.com/pradeepd80/devopsfirst2706.git
+   git push -u origin main
+   
+   …or push an existing repository from the command line
+   git remote add origin https://github.com/pradeepd80/devopsfirst2706.git
+   git branch -M main
+   git push -u origin main
+   
+4.    
+   
+   
+-------------------------07 practice---------------------------------------
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (main)
+$ ls
+README.md  devopsInfo.txt  devopsInfo.txt.bak  myjavafile
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (main)
+$ git checkout -b UAT
+Switched to a new branch 'UAT'
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (UAT)
+$ touch myUATFile
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (UAT)
+$ git add -A
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (UAT)
+$ git commit -m "My UAT File"
+[UAT 5d9445c] My UAT File
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 myUATFile
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (UAT)
+$ git push
+fatal: The current branch UAT has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin UAT
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (UAT)
+$ git push -u origin UAT
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/pradeepd80/devopsfirst2706.git/'
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (UAT)
+$ ls
+README.md  devopsInfo.txt  devopsInfo.txt.bak  myUATFile  myjavafile
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (UAT)
+$ git config --global user.name "Pradeep"
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (UAT)
+$ git config --global user.email "pradeep.d80@gmail.com"
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (UAT)
+$ git push -u origin UAT
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 267 bytes | 267.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'UAT' on GitHub by visiting:
+remote:      https://github.com/pradeepd80/devopsfirst2706/pull/new/UAT
+remote:
+To https://github.com/pradeepd80/devopsfirst2706.git
+ * [new branch]      UAT -> UAT
+branch 'UAT' set up to track 'origin/UAT'.
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (UAT)
+$ git staus
+git: 'staus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (UAT)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (main)
+$ git checkout UAT
+Switched to branch 'UAT'
+Your branch is up to date with 'origin/UAT'.
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (UAT)
+$ git checkout -b SIT
+Switched to a new branch 'SIT'
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (SIT)
+$ touch mySITFile
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (SIT)
+$ git add -A
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (SIT)
+$ git commit -m "My SIT File"
+[SIT 9d57c52] My SIT File
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 mySITFile
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (SIT)
+$ git push
+fatal: The current branch SIT has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin SIT
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (SIT)
+$ git push -u origin SIT
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 232 bytes | 232.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'SIT' on GitHub by visiting:
+remote:      https://github.com/pradeepd80/devopsfirst2706/pull/new/SIT
+remote:
+To https://github.com/pradeepd80/devopsfirst2706.git
+ * [new branch]      SIT -> SIT
+branch 'SIT' set up to track 'origin/SIT'.
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (SIT)
+$ git checkout -b SprintOne
+Switched to a new branch 'SprintOne'
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (SprintOne)
+$ touch mySprintOneFile
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (SprintOne)
+$ git add -A
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (SprintOne)
+$ git commit -m "my SpringOne File"
+[SprintOne 88e4632] my SpringOne File
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 mySprintOneFile
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (SprintOne)
+$ git push -u origin SprintOne
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 243 bytes | 243.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'SprintOne' on GitHub by visiting:
+remote:      https://github.com/pradeepd80/devopsfirst2706/pull/new/SprintOne
+remote:
+To https://github.com/pradeepd80/devopsfirst2706.git
+ * [new branch]      SprintOne -> SprintOne
+branch 'SprintOne' set up to track 'origin/SprintOne'.
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (SprintOne)
+$ git checkout SIT
+Switched to branch 'SIT'
+Your branch is up to date with 'origin/SIT'.
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (SIT)
+$ git checkout -b SprintTwo
+Switched to a new branch 'SprintTwo'
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (SprintTwo)
+$ touch mySprintTwoFile
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (SprintTwo)
+$ git add -A
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (SprintTwo)
+$ git push -u origin SprintTwo
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'SprintTwo' on GitHub by visiting:
+remote:      https://github.com/pradeepd80/devopsfirst2706/pull/new/SprintTwo
+remote:
+To https://github.com/pradeepd80/devopsfirst2706.git
+ * [new branch]      SprintTwo -> SprintTwo
+branch 'SprintTwo' set up to track 'origin/SprintTwo'.
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (SprintTwo)
+$ git checkout SIT
+Switched to branch 'SIT'
+A       mySprintTwoFile
+Your branch is up to date with 'origin/SIT'.
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (SIT)
+$ git checkout SprintOne
+Switched to branch 'SprintOne'
+A       mySprintTwoFile
+Your branch is up to date with 'origin/SprintOne'.
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (SprintOne)
+$ ls
+README.md       devopsInfo.txt.bak  mySprintOneFile  myUATFile
+devopsInfo.txt  mySITFile           mySprintTwoFile  myjavafile
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (SprintOne)
+$ git checkout sit
+Switched to branch 'sit'
+A       mySprintTwoFile
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (sit)
+$ git checkout SIT
+Switched to branch 'SIT'
+A       mySprintTwoFile
+Your branch is up to date with 'origin/SIT'.
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (SIT)
+$ ls
+README.md       devopsInfo.txt.bak  mySprintTwoFile  myjavafile
+devopsInfo.txt  mySITFile           myUATFile
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (SIT)
+$ git merge SprintOne
+Updating 9d57c52..88e4632
+Fast-forward
+ mySprintOneFile | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 mySprintOneFile
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (SIT)
+$ ls
+README.md       devopsInfo.txt.bak  mySprintOneFile  myUATFile
+devopsInfo.txt  mySITFile           mySprintTwoFile  myjavafile
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (SIT)
+$ git merge SprintTwo
+Already up to date.
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (SIT)
+$ git push -u origin SIT
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/pradeepd80/devopsfirst2706.git
+   9d57c52..88e4632  SIT -> SIT
+branch 'SIT' set up to track 'origin/SIT'.
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (SIT)
+$ git checkout UAT
+Switched to branch 'UAT'
+A       mySprintTwoFile
+Your branch is up to date with 'origin/UAT'.
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (UAT)
+$ git push -u origin UAT
+Everything up-to-date
+branch 'UAT' set up to track 'origin/UAT'.
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (UAT)
+$ git checkout main
+Switched to branch 'main'
+A       mySprintTwoFile
+Your branch is up to date with 'origin/main'.
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (main)
+$ git merge UAT
+Updating 103fd87..5d9445c
+Fast-forward
+ myUATFile | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 myUATFile
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (main)
+$ git push
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/pradeepd80/devopsfirst2706.git
+   103fd87..5d9445c  main -> main
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (main)
+$ git tag
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (main)
+$ git tag SBI_R_2.0
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (main)
+$ git tag
+SBI_R_2.0
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (main)
+$ git checkout SBI_R_2.0
+Note: switching to 'SBI_R_2.0'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 5d9445c My UAT File
+A       mySprintTwoFile
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 ((SBI_R_2.0))
+$ git push -u origin SBI_R_2.0
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/pradeepd80/devopsfirst2706.git
+ * [new tag]         SBI_R_2.0 -> SBI_R_2.0
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 ((SBI_R_2.0))
+$ git checkout SprintOne
+Previous HEAD position was 5d9445c My UAT File
+Switched to branch 'SprintOne'
+A       mySprintTwoFile
+Your branch is up to date with 'origin/SprintOne'.
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (SprintOne)
+$ ls
+README.md       devopsInfo.txt.bak  mySprintOneFile  myUATFile
+devopsInfo.txt  mySITFile           mySprintTwoFile  myjavafile
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (SprintOne)
+$ git add -A
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (SprintOne)
+$ git commit -m "my one file"
+[SprintOne 8460ae7] my one file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 mySprintTwoFile
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (SprintOne)
+$ git push -u origin SpringOne
+error: src refspec SpringOne does not match any
+error: failed to push some refs to 'https://github.com/pradeepd80/devopsfirst2706.git'
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (SprintOne)
+$ git config --global user.name "Pradeep"
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (SprintOne)
+$ git config --global user.email "pradeep.d80@gmail.com"
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (SprintOne)
+$ git push -u origin SpringOne
+error: src refspec SpringOne does not match any
+error: failed to push some refs to 'https://github.com/pradeepd80/devopsfirst2706.git'
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (SprintOne)
+$ git checkout SIT
+Switched to branch 'SIT'
+Your branch is up to date with 'origin/SIT'.
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (SIT)
+$ git merge SprintOne
+Updating 88e4632..8460ae7
+Fast-forward
+ mySprintTwoFile | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 mySprintTwoFile
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (SIT)
+$ git merge SpringTwo
+merge: SpringTwo - not something we can merge
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (SIT)
+$ git merge SprintTwo
+Already up to date.
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (SIT)
+$ git push -u origin SIT
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 236 bytes | 236.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/pradeepd80/devopsfirst2706.git
+   88e4632..8460ae7  SIT -> SIT
+branch 'SIT' set up to track 'origin/SIT'.
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (SIT)
+$ ls
+README.md       devopsInfo.txt.bak  mySprintOneFile  myUATFile
+devopsInfo.txt  mySITFile           mySprintTwoFile  myjavafile
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (SIT)
+$ git checkout UAT
+Switched to branch 'UAT'
+Your branch is up to date with 'origin/UAT'.
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (UAT)
+$ git merge SIT
+Updating 5d9445c..8460ae7
+Fast-forward
+ mySITFile       | 0
+ mySprintOneFile | 0
+ mySprintTwoFile | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 mySITFile
+ create mode 100644 mySprintOneFile
+ create mode 100644 mySprintTwoFile
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (UAT)
+$ git push -u origin UAT
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/pradeepd80/devopsfirst2706.git
+   5d9445c..8460ae7  UAT -> UAT
+branch 'UAT' set up to track 'origin/UAT'.
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (UAT)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (main)
+$ git merge UAT
+Updating 5d9445c..8460ae7
+Fast-forward
+ mySITFile       | 0
+ mySprintOneFile | 0
+ mySprintTwoFile | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 mySITFile
+ create mode 100644 mySprintOneFile
+ create mode 100644 mySprintTwoFile
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (main)
+$ git push
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/pradeepd80/devopsfirst2706.git
+   5d9445c..8460ae7  main -> main
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (main)
+$ ls
+README.md       devopsInfo.txt.bak  mySprintOneFile  myUATFile
+devopsInfo.txt  mySITFile           mySprintTwoFile  myjavafile
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (main)
+$ git log
+commit 8460ae7642a7d7dff60ce7618867ee6b3f47af26 (HEAD -> main, origin/main, origin/UAT, origin/SIT, origin/HEAD, UAT, SprintOne, SIT)
+Author: Pradeep <pradeep.d80@gmail.com>
+Date:   Thu Jul 7 17:39:55 2022 +0530
+
+    my one file
+
+commit 88e46321737546088189f231f8425cf4d369e2f7 (origin/SprintOne)
+Author: Pradeep <pradeep.d80@gmail.com>
+Date:   Thu Jul 7 17:22:30 2022 +0530
+
+    my SpringOne File
+
+commit 9d57c52abb8ca4eafaaaeaa672cd43fea8d20a5e (origin/SprintTwo, SprintTwo)
+Author: Pradeep <pradeep.d80@gmail.com>
+Date:   Thu Jul 7 17:20:15 2022 +0530
+
+    My SIT File
+
+commit 5d9445cf875f696d0e64d54da00515e60d72143a (tag: SBI_R_2.0)
+Author: Pradeep <pradeep.d80@gmail.com>
+Date:   Thu Jul 7 16:53:31 2022 +0530
+
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (main)
+$ git cat-file -s
+fatal: <object> required with '-s'
+
+usage: git cat-file <type> <object>
+   or: git cat-file (-e | -p) <object>
+   or: git cat-file (-t | -s) [--allow-unknown-type] <object>
+   or: git cat-file (--batch | --batch-check | --batch-command) [--batch-all-objects]
+                    [--buffer] [--follow-symlinks] [--unordered]
+                    [--textconv | --filters]
+   or: git cat-file (--textconv | --filters)
+                    [<rev>:<path|tree-ish> | --path=<path|tree-ish> <rev>]
+
+Check object existence or emit object contents
+    -e                    check if <object> exists
+    -p                    pretty-print <object> content
+
+Emit [broken] object attributes
+    -t                    show object type (one of 'blob', 'tree', 'commit', 'tag', ...)
+    -s                    show object size
+    --allow-unknown-type  allow -s and -t to work with broken/corrupt objects
+
+Batch objects requested on stdin (or --batch-all-objects)
+    --batch[=<format>]    show full <object> or <rev> contents
+    --batch-check[=<format>]
+                          like --batch, but don't emit <contents>
+    --batch-command[=<format>]
+                          read commands from stdin
+    --batch-all-objects   with --batch[-check]: ignores stdin, batches all known objects
+
+Change or optimize batch output
+    --buffer              buffer --batch output
+    --follow-symlinks     follow in-tree symlinks
+    --unordered           do not order objects before emitting them
+
+Emit object (blob or tree) with conversion or filter (stand-alone, or with batch)
+    --textconv            run textconv on object's content
+    --filters             run filters on object's content
+    --path blob|tree      use a <path> for (--textconv | --filters); Not with 'batch'
+
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (main)
+$ git log
+commit 8460ae7642a7d7dff60ce7618867ee6b3f47af26 (HEAD -> main, origin/main, origin/UAT, origin/SIT, origin/HEAD, UAT, SprintOne, SIT)
+Author: Pradeep <pradeep.d80@gmail.com>
+Date:   Thu Jul 7 17:39:55 2022 +0530
+
+    my one file
+
+commit 88e46321737546088189f231f8425cf4d369e2f7 (origin/SprintOne)
+Author: Pradeep <pradeep.d80@gmail.com>
+Date:   Thu Jul 7 17:22:30 2022 +0530
+
+    my SpringOne File
+
+commit 9d57c52abb8ca4eafaaaeaa672cd43fea8d20a5e (origin/SprintTwo, SprintTwo)
+Author: Pradeep <pradeep.d80@gmail.com>
+Date:   Thu Jul 7 17:20:15 2022 +0530
+
+    My SIT File
+
+commit 5d9445cf875f696d0e64d54da00515e60d72143a (tag: SBI_R_2.0)
+Author: Pradeep <pradeep.d80@gmail.com>
+Date:   Thu Jul 7 16:53:31 2022 +0530
+
+:
+commit 8460ae7642a7d7dff60ce7618867ee6b3f47af26 (HEAD -> main, origin/main, origin/UAT, origin/SIT, origin/HEAD, UAT, SprintOne, SIT)
+Author: Pradeep <pradeep.d80@gmail.com>
+Date:   Thu Jul 7 17:39:55 2022 +0530
+
+    my one file
+
+commit 88e46321737546088189f231f8425cf4d369e2f7 (origin/SprintOne)
+Author: Pradeep <pradeep.d80@gmail.com>
+Date:   Thu Jul 7 17:22:30 2022 +0530
+
+    my SpringOne File
+
+commit 9d57c52abb8ca4eafaaaeaa672cd43fea8d20a5e (origin/SprintTwo, SprintTwo)
+Author: Pradeep <pradeep.d80@gmail.com>
+Date:   Thu Jul 7 17:20:15 2022 +0530
+
+    My SIT File
+
+commit 5d9445cf875f696d0e64d54da00515e60d72143a (tag: SBI_R_2.0)
+Author: Pradeep <pradeep.d80@gmail.com>
+Date:   Thu Jul 7 16:53:31 2022 +0530
+
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (main)
+$ git cat-file -s 88e46321737546088189f231f8425cf4d369e2f7
+228
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (main)
+$ git cat-file -e 88e46321737546088189f231f8425cf4d369e2f7
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (main)
+$ git cat-file -t 88e46321737546088189f231f8425cf4d369e2f7
+commit
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (main)
+$ git cat-file -p 88e46321737546088189f231f8425cf4d369e2f7
+tree c9c319eb213e80ccdaa9fe866b0ff51a4c7ae4d5
+parent 9d57c52abb8ca4eafaaaeaa672cd43fea8d20a5e
+author Pradeep <pradeep.d80@gmail.com> 1657194750 +0530
+committer Pradeep <pradeep.d80@gmail.com> 1657194750 +0530
+
+my SpringOne File
+
+hp@Alok MINGW64 /e/DevopsExcercise/Devmain/devopsfirst2706 (main)
+$
+
+   
+   
+   
+   

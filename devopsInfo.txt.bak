@@ -1,0 +1,34 @@
+
+1. login Githu.com
+2. create token
+	hp laptop : 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
+	
+	toshiba laptop : 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
+	
+3. create git remote repo =>devopsfirst2706
+
+   …or create a new repository on the command line
+   echo "# devopsfirst2706" >> README.md
+   git init
+   git add README.md
+   git commit -m "first commit"
+   git config --global user.name "Pradeep"
+   git config --global user.email "pradeep.d80@gmail.com"
+   git commit -m "first commit"
+   git branch -M main
+   git remote add origin https://github.com/pradeepd80/devopsfirst2706.git
+   git push -u origin main
+   
+   …or push an existing repository from the command line
+   git remote add origin https://github.com/pradeepd80/devopsfirst2706.git
+   git branch -M main
+   git push -u origin main
+   
+4.    
+   
+   
+	
+   
+   
+   
+   
